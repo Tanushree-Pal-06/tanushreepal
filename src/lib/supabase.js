@@ -18,8 +18,8 @@ if (!supabaseUrl || !supabaseServiceKey) {
 }
 
 export const supabase = createClient(
-  supabaseUrl || '',
-  supabaseServiceKey || '',
+  supabaseUrl || 'https://placeholder.supabase.co',
+  supabaseServiceKey || 'placeholder_key',
   {
     auth: { persistSession: false },
   }
